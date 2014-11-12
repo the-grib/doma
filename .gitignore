@@ -49,3 +49,5 @@ bin/
 packages/
 *.suo
 *.user
+externals/
+.idea/
