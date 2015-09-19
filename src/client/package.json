@@ -1,0 +1,13 @@
+{
+  "name": "todom",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "1.4.1",
+    "http-server": "^0.8.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1 -o"
+  }
+}
