@@ -10,7 +10,7 @@ namespace Todom.Domain
             Name = name;
         }
 
-        private AreaType() : this(string.Empty) { } // Only for EF!
+        private AreaType() { } // Only for EF!
 
         public string Name { get; }
 

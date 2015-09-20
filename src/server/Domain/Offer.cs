@@ -14,5 +14,7 @@ namespace Todom.Domain
         public Guid? Area { get; set; }
 
         public int Price { get; set; }
+
+        public Conditions Conditions { get; set; }
     }
 }

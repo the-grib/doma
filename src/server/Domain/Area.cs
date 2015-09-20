@@ -19,14 +19,16 @@ namespace Todom.Domain
 
         public string Notes { get; set; }
 
-        //public Kitchen Kitchen { get; set; }
+        public Kitchen Kitchen { get; set; }
 
-        //public Workplace Workplace { get; set; }
+        public Workplace Workplace { get; set; }
 
-        //public Couchettes Couchettes { get; set; }
+        public Couchettes Couchettes { get; set; }
 
-        //public Washroom Washroom { get; set; }
+        public Washroom Washroom { get; set; }
 
-        //public Cleanliness Cleanliness { get; set; }
+        public Cleanliness Cleanliness { get; set; }
+
+        public Additional Additional { get; set; }
     }
 }

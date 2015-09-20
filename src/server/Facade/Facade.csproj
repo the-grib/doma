@@ -118,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Area\Get.cs" />
-    <Compile Include="Controllers\Area\AreaController.cs" />
+    <Compile Include="Controllers\Area\OfferController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="ViewModels.cd" />
     <None Include="Properties\PublishProfiles\Masterhost.pubxml" />
   </ItemGroup>
   <ItemGroup>

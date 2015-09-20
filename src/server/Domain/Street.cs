@@ -10,7 +10,7 @@ namespace Todom.Domain
             Name = name;
         }
 
-        private Street() : this(string.Empty) { } // Only for EF!
+        private Street() { } // Only for EF!
 
         public string Name { get; }
 

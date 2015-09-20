@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cleanliness.cs" />
+    <Compile Include="Additional.cs" />
+    <Compile Include="Conditions.cs" />
+    <Compile Include="Washroom.cs" />
+    <Compile Include="Couchettes.cs" />
+    <Compile Include="Workplace.cs" />
+    <Compile Include="Kitchen.cs" />
     <Compile Include="City.cs" />
     <Compile Include="CityStreets.cs" />
     <Compile Include="AreaTypes.cs" />
@@ -60,9 +67,6 @@
       <Project>{76A5C1AA-5D41-4A73-B5C5-40D1C63DE2C6}</Project>
       <Name>Infrastructure.Domain</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Diagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

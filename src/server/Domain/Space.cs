@@ -12,7 +12,7 @@ namespace Todom.Domain
             Cook = cook;
         }
 
-        private Space() : this(0, 0, 0) { } // Only for EF!
+        private Space() { } // Only for EF!
 
         public double Common { get; }
 

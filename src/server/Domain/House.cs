@@ -18,5 +18,7 @@ namespace Todom.Domain
         public string Number { get; set; }
 
         public int Storeys { get; set; }
+
+        public bool Elevator { get; set; }
     }
 }
