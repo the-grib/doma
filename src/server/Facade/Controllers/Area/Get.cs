@@ -37,15 +37,15 @@ namespace Todom.Facade.Controllers.Area
                 Landlord = landlord.FirstName,
                 Type = area.Type.Name,
                 Notes = area.Notes,
-                Conditions = new Conditions(),
+                Conditions = new Conditions {FamilyKidFriendly = true, PaymentOfUtilitiesIncluded = true},
                 Properties = new Properties
                 {
-                    Kitchen = new Kitchen(),
-                    Workplace = new Workplace(),
-                    Couchettes = new Couchettes(),
-                    Washroom = new Washroom(),
-                    Cleanliness = new Cleanliness(),
-                    Additional = new Additional()
+                    Kitchen = new Kitchen {Cooker = true, DinnerTable = true},
+                    Workplace = new Workplace {Acoustics = true, Desk = true},
+                    Couchettes = new Couchettes {Bed = true, DoubleBed = true},
+                    Washroom = new Washroom {Bathtub = true, Shower = true},
+                    Cleanliness = new Cleanliness {Drier = true, Iron = true},
+                    Additional = new Additional {Balcony = true, GlazedBalcony = true}
                 }
             };
             return data;
