@@ -117,7 +117,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\Area\Get.cs" />
+    <Compile Include="Controllers\Area\AreaController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -133,6 +134,16 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Masterhost.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{15D5CF39-FA99-46E1-915F-85B48ED09243}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Domain\Infrastructure.Domain.csproj">
+      <Project>{76A5C1AA-5D41-4A73-B5C5-40D1C63DE2C6}</Project>
+      <Name>Infrastructure.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

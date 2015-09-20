@@ -1,0 +1,27 @@
+<link rel="import" href="externals/polymer/polymer.html">
+<link rel="import" href="externals/iron-ajax/iron-ajax.html">
+
+<dom-module id="backend-offer">
+
+    <style>
+        :host { display: none; }
+    </style>
+
+    <template>
+        <iron-ajax id="query" auto url="http://localhost:58062/area?id=6A74913B-70EE-427F-ACF4-6B66D862AF9C&format=json" handle-as="json" last-response="{{data}}"></iron-ajax>
+        <!--<iron-ajax id="query" auto url="http://api.todom.me/area?id=6A74913B-70EE-427F-ACF4-6B66D862AF9C&format=json" handle-as="json" last-response="{{data}}"></iron-ajax>-->
+    </template>
+
+    <script>
+        Polymer({
+            is: "backend-offer",
+            properties: {
+                data: {
+                    value: {},
+                    notify: true
+                }
+            }
+        });
+    </script>
+
+</dom-module>

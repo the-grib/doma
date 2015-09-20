@@ -1,0 +1,35 @@
+<link rel="import" href="externals/polymer/polymer.html">
+<link rel="import" href="externals/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="backend-offer.html">
+
+<dom-module id="offer-profile">
+
+    <style>
+        :host {
+            display: block;
+            width: 100%;
+        }
+    </style>
+
+    <template>
+
+        <backend-offer data="{{offer}}"></backend-offer>
+
+        <ul>
+            <li>[[offer.price]]</li>
+            <li>[[offer.landlord]]</li>
+            <li>[[offer.addressLine1]]</li>
+            <li>[[offer.addressLine2]]</li>
+            <li>[[offer.type]]</li>
+            <li>[[offer.notes]]</li>
+        </ul>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: "offer-profile"
+        });
+    </script>
+
+</dom-module>
