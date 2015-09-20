@@ -15,14 +15,79 @@
 
         <backend-offer data="{{offer}}"></backend-offer>
 
+        <p>[[offer.photo]]</p>
+        <p>[[offer.price]]</p>
+        <p>[[offer.addressLine1]]</p>
+        <p>[[offer.addressLine2]]</p>
+        <p>[[offer.landlord]]</p>
+        <p>[[offer.type]]</p>
+        
+        <p>[[offer.notes]]</p>
+        <p>Условия</p>
         <ul>
-            <li>[[offer.price]]</li>
-            <li>[[offer.landlord]]</li>
-            <li>[[offer.addressLine1]]</li>
-            <li>[[offer.addressLine2]]</li>
-            <li>[[offer.type]]</li>
-            <li>[[offer.notes]]</li>
+            <li>[[offer.conditions.paymentOfUtilitiesIncluded]]</li>
+            <li>[[offer.conditions.plusPaymentForElectricity]]</li>
+            <li>[[offer.conditions.plusPaymentForWater]]</li>
+            <li>[[offer.conditions.smokingAllowed]]</li>
+            <li>[[offer.conditions.petsAllowed]]</li>
+            <li>[[offer.conditions.familyKidFriendly]]</li>
         </ul>
+        
+        <p>Кухня</p>
+        <ul>
+            <li>[[offer.properties.kitchen.kitchenCabinets]]</li>
+            <li>[[offer.properties.kitchen.dinnerTable]]</li>
+            <li>[[offer.properties.kitchen.fridge]]</li>
+            <li>[[offer.properties.kitchen.cooker]]</li>
+            <li>[[offer.properties.kitchen.microwave]]</li>
+            <li>[[offer.properties.kitchen.dishwasher]]</li>
+            <li>[[offer.properties.kitchen.teapot]]</li>
+            <li>[[offer.properties.kitchen.cutleryAndCrockery]]</li>
+        </ul>
+        
+        <p>Спальни</p>
+        <ul>
+            <li>[[offer.properties.couchettes.bed]]</li>
+            <li>[[offer.properties.couchettes.doubleBed]]</li>
+            <li>[[offer.properties.couchettes.chairBed]]</li>
+            <li>[[offer.properties.couchettes.sofaBed]]</li>
+            <li>[[offer.properties.couchettes.mattress]]</li>
+        </ul>
+
+        <p>Рабочее место</p>
+        <ul>
+            <li>[[offer.properties.workplace.desk]]</li>
+            <li>[[offer.properties.workplace.armchair]]</li>
+            <li>[[offer.properties.workplace.pc]]</li>
+            <li>[[offer.properties.workplace.acoustics]]</li>
+        </ul>
+
+        <p>Санузел</p>
+        <ul>
+            <li>[[offer.properties.washroom.bathtub]]</li>
+            <li>[[offer.properties.washroom.shower]]</li>
+            <li>[[offer.properties.washroom.jacuzzi]]</li>
+        </ul>
+
+        <p>Уборка</p>
+        <ul>
+            <li>[[offer.properties.cleanliness.washingMachine]]</li>
+            <li>[[offer.properties.cleanliness.iron]]</li>
+            <li>[[offer.properties.cleanliness.hoover]]</li>
+            <li>[[offer.properties.cleanliness.drier]]</li>
+        </ul>
+
+        <p>Дополнительно</p>
+        <ul>
+            <li>[[offer.properties.additional.balcony]]</li>
+            <li>[[offer.properties.additional.glazedBalcony]]</li>
+            <li>[[offer.properties.additional.internet]]</li>
+            <li>[[offer.properties.additional.tv]]</li>
+            <li>[[offer.properties.additional.elevatorInBuilding]]</li>
+            <li>[[offer.properties.additional.intercom]]</li>
+            <li>[[offer.properties.additional.waterMeters]]</li>
+        </ul>
+            
 
     </template>
 
