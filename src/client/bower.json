@@ -2,8 +2,7 @@
   "name": "todom",
   "license": "MIT",
   "dependencies": {
-    "font-roboto": "Polymer/font-roboto#^1.0.0",
-    "polymer": "Polymer/polymer#^1.0.0",
+    "polymer": "Polymer/polymer#^1.1.0",
     "iron-flex-layout": "PolymerElements/iron-flex-layout",
     "iron-ajax": "PolymerElements/iron-ajax",
     "paper-header-panel": "PolymerElements/paper-header-panel",
