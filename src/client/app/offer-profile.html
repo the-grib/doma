@@ -25,8 +25,8 @@
         <p>[[offer.notes]]</p>
         <p>Условия</p>
         <ul>
-            <li>[[offer.conditions.paymentOfUtilitiesIncluded]]</li>
-            <li>[[offer.conditions.plusPaymentForElectricity]]</li>
+            <li style$="{{lineThrough(offer.conditions.paymentOfUtilitiesIncluded)}}">Коммунальные включены</li>
+            <li style$="{{lineThrough(offer.conditions.plusPaymentForElectricity)}}">+ оплата за электричество</li>
             <li>[[offer.conditions.plusPaymentForWater]]</li>
             <li>[[offer.conditions.smokingAllowed]]</li>
             <li>[[offer.conditions.petsAllowed]]</li>
@@ -93,7 +93,10 @@
 
     <script>
         Polymer({
-            is: "offer-profile"
+            is: "offer-profile",
+            lineThrough: function(value) {
+                return value ? "" : "text-decoration: line-through";
+            }
         });
     </script>
 
